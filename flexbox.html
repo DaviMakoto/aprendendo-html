@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /*DIV CONTAINER*/
+        .container{
+            display: flex;
+            flex-wrap: nowrap; /*QUEBRA DE LINHA*/
+            justify-content: space-between; /*ALINHAMENTO HORIZONTAL*/
+            align-items: center; /*ALINHAMENTO VERTICAL*/            
+        }
+        .box-container{
+            width: 300px;
+            background-color: blue;
+            border: 2px solid red;
+            color: aliceblue;
+        }
+        .box-container:nth-child(1){
+            order: 1;
+            color: aqua;
+        }
+        .box-container:nth-child(2){
+            order: 3;
+            color: brown;
+        }
+        .box-container:nth-child(3){
+            order: 2;
+            color: black;
+        }
+        .box-container:nth-child(4){
+            order: 0;
+        }               
+        header{
+        background-color: blue;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;   
+        padding: 20px;  
+        align-items: center;
+        }
+        header nav ul{
+        display: flex;           
+        list-style: none;
+        }
+        header nav ul li{
+            margin: 10px;
+            font-size: 10pt;
+        }
+        a{
+            text-decoration: none;
+            color: aqua;
+            font-size: 16pt;
+            font-family: 'Courier New', Courier, monospace;
+            transition: all ease-in 0.5%;/*FEITO DE TRANSIÇÂO*/
+        }
+        a:hover{
+        opacity: 0.5;
+        text-decoration: dotted;
+        color: blanchedalmond;
+        margin-left: 20px;
+        }               
+    </style>
+</head>
+<body>
+    <h1>flexbox</h1>
+    <h2>Exemplo 1</h2>
+    <div class="container">
+        <div class="box-container">01</div>
+        <div class="box-container">02</div>
+        <div class="box-container">03</div>
+        <div class="box-container">04</div>
+        <div class="box-container">05</div>
+    </div>
+
+    <h2>Exemplo 2</h2>
+    <header>
+        <a href="">Logo</a>
+        <nav>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">CONTATO</a></li>
+                <li><a href="">SUPORTE</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
