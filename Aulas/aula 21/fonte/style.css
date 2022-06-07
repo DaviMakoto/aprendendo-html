@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Blaka&family=Kdam+Thmor+Pro&family=Lemonada:wght@500&display=swap');
+
+h1{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+h2{
+    font-family: 'Blaka', cursive;
+font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+p{
+    font-family: 'Blaka', cursive;
+font-family: 'Kdam Thmor Pro', sans-serif;
+font-family: 'Lemonada', cursive;
+}
