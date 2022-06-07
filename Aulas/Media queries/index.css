@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+/*MANU - BARRA SUPERIOR*/
+header{
+    background-color: brown;
+    text-align: center;
+}
+
+/*main*/
+main{
+    padding: 30px;
+}
+
+main div{
+    width: 1000px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+main div img{
+    width: 1000px;
+    height: 300px;
+    
+}
+
+main p{
+    font-size: 10pt;
+    text-align: justify;
+}
+
+/*footer*/
+footer{
+    background-color: brown;
+    padding: 10px;
+}
+footer p{
+    text-align: center;
+    color: white;
+    font-size: 20pt;
+}
+
+/*smartphones 602 - 1099*/
+@media(min-width: 601px){
+    /*MANU - BARRA SUPERIOR*/
+        header{
+            background-color: brown;
+            text-align: center;
+        }
+
+        header .desktop{
+            display: none;
+            visibility: hidden;
+        }
+        header .phone{
+            display: block;
+            visibility: hidden;
+        }
+
+        /*main*/
+        main{
+            padding: 30px;
+        }
+
+        main div{
+            width: 300px;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+
+        main div img{
+            width: 300px;
+            height: auto;
+            
+        }
+
+        main p{
+            font-size: 10pt;
+            text-align: justify;
+        }
+
+        /*footer*/
+        footer{
+            background-color: brown;
+            padding: 10px;
+        }
+        footer p{
+            text-align: center;
+            color: white;
+            font-size: 16pt;
+        }
+}
+
+/*desktop */
+@media(min-width: 1100px){
+    /*MANU - BARRA SUPERIOR*/
+        header{
+            background-color: rgb(218, 22, 159);
+            text-align: center;
+        }
+
+        header nav{
+            font-size: 20pt;
+        }
+
+        /*main*/
+        main{
+            padding: 30px;
+        }
+
+        main div{
+            width: 1000px;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+
+        main div img{
+            width: 100%;
+            height: 400px;
+            
+        }
+
+        main p{
+            font-size: 22pt;
+            text-align: justify;
+            margin: auto;
+        }
+
+        /*footer*/
+        footer{
+            background-color: rgb(255, 9, 214);
+            padding: 10px;
+        }
+        footer p{
+            text-align: center;
+            color: white;
+            font-size: 16pt;
+        }
+}
+
+/*tablet 0 - 600*/
+@media(max-width: 600px){
+    /*MANU - BARRA SUPERIOR*/
+        header{
+            background-color: rgb(0, 255, 157);
+            text-align: center;
+        }
+
+        header nav{
+            font-size: 25pt;
+        }
+        header .desktop{
+            display: block;
+            /*visibility: hidden;*/
+        }
+        header .phone{
+            display: none;
+            /* visibility: hidden; */
+        }
+
+        /*main*/
+        main{
+            padding: 20px;
+        }
+
+        main div{
+            width: 80%;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+
+        main div img{
+            width: 100%;
+            height: 300px;
+            
+        }
+
+        main p{
+            font-size: 10pt;
+            text-align: justify;
+        }
+
+        /*footer*/
+        footer{
+            background-color: rgb(10, 197, 141);
+            padding: 10px;
+        }
+        footer p{
+            text-align: center;
+            color: rgb(255, 255, 255);
+            font-size: 20pt;
+        }
+}

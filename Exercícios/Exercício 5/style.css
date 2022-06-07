@@ -1,0 +1,124 @@
+/*fonte*/
+    *{
+        margin: 0;
+        padding: 0;          
+        list-style: none;  
+        font-family: Arial, Helvetica, sans-serif;       
+    }
+
+    body{
+        background-color: rgb(32, 31, 31);
+        min-height: 100%;
+        max-height: 100%;
+    }
+
+    a{
+        color: white;
+        text-decoration: none;
+    }
+
+    a:hover{
+        text-decoration: underline;
+    }
+    h3{
+        color: white;
+    }
+
+    p{
+        color: white;
+    }
+
+/*Superior*/
+    .superior{
+        display: flex;
+        justify-content: right;
+    }
+
+    section header{
+        display: flex;
+        gap: 20px;
+        padding: 18px;
+        font-size: 10pt;
+    }
+
+    .superior header .symbol:hover div{
+        display: block;
+    }
+
+
+    .superior header .symbol{
+        
+    }        
+
+
+    .superior header .symbol span{        
+        width: fit-content;
+        cursor: pointer;
+    }
+
+    .superior header .symbol .symbol-2{
+        display: none;
+        position: absolute;
+        box-sizing: border-box;
+        width: auto;
+        height: 200px;        
+        overflow-y: scroll;
+        right: 1%;    
+        justify-content: flex-start; 
+        border: 1px solid white; 
+          
+    }
+
+    .superior header .symbol .symbol-2 ul{
+       display: grid;
+       grid-template-columns: repeat(3, 1fr);
+       gap: 2px;
+       position: static;            
+    }
+
+    .superior header .symbol .symbol-2 ul li span{
+       font-size: 50px;
+       padding: 20px;
+       
+       
+    }
+
+    .material-symbols-outlined{
+        color: white;
+        font-size: 20pt;
+    }
+
+
+/*meio*/
+    .search{
+
+    }
+
+    .search .esq{
+
+    }
+
+    .search .dir{
+
+    }
+
+    .pesquisa2{
+
+    }
+
+/*parte inferior*/
+    footer{
+
+    }
+
+    footer section{
+
+    }
+
+    .footer-inf-esq{
+
+    }
+
+    .footer-inf-dir{
+        
+    }
